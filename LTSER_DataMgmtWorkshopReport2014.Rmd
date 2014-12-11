@@ -1,0 +1,96 @@
+---
+title: "LTSER Data Management Workshop Report"
+author: "Bryan Milstead, Inigo San Gil, and Andrea Previtali"
+date: "Monday, December 08, 2014"
+output: pdf_document
+---
+```{r setup , eval=TRUE, include=FALSE, echo=FALSE, cache=FALSE}
+  #load libraries  
+    library(knitr)
+  #load data
+  participants<- read.csv("participants.csv")
+```
+Introduction:
+-------------------------
+As part of the All Scientist of the Americas meeting (http://www.ltser-chile.cl/ilter-meeting-2014/) a data management workshop was held on December 3rd, 2014 in Valdivia Chile.  The main purpose of the workshop was to intiatiate a conversation among participants on how to better manage long-term ecological data.  The workshop began with a presentation of the Drupal Ecological Information Management System (DEIMS), a content management systems designed to facilitate the stewardship and documentation of ecological datasets.  This was followed by a question and answer period where participants discussed the challenges they face.  We ended the workshop by collecting a set of recommendations from the participants.
+
+
+Participants:
+-------------------------
+The workshop was organized by:
+
+```{r Organizers , eval=TRUE, include=TRUE, echo=FALSE, cache=FALSE}
+  #subset participants
+    a<-participants[participants$group=="Presenter"|participants$group=="Organizer",c('name','country','email')]
+  #make a pretty table
+    kable(a,row.names=FALSE)
+```
+
+The following people attended:
+
+```{r Attendee , eval=TRUE, include=TRUE, echo=FALSE, cache=FALSE}
+  #subset participants
+    a<-participants[participants$group=="Attendee",c('name','country','email')]
+  #make a pretty table
+    kable(a,row.names=FALSE)
+```
+
+Additional People to include on the mailing list for the workshop:
+
+```{r MailingList , eval=TRUE, include=TRUE, echo=FALSE, cache=FALSE}
+  #subset participants
+    a<-participants[participants$group=="MailingList",c('name','country','email')]
+  #make a pretty table
+    kable(a,row.names=FALSE)
+```
+
+
+Links
+-------------------------
+Below we provide links to information on basic information management topics of interest to the participants. This is not a complete list.  Please feel free to suggest additional materials and topics to include.
+<br>
+**Formatting Data in Spreadsheets:**  Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel.  Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly.  The following sites provide information on how to make sure the data are formatted correctly:
+* http://vita.had.co.nz/papers/tidy-data.pdf
+<br>
+**Training & Best Practices:**  Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel.  Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly.  The following sites provide information on how to make sure the data are formatted correctly:
+* Tid
+
+
+
+* Portals
+    + http://databib.org/
+    + http://www.re3data.org/
+    + https://www.datacite.org/
+    + http://oad.simmons.edu/oadwiki/Data_repositories
+    + http://www.nature.com/sdata/data-policies/repositories
+    + http://blogs.plos.org/tech/how-to-find-an-appropriate-research-data-repository/
+    + http://figshare.com/
+* gitHub
+* DataOne: https://www.dataone.org/
+* Data Sharing Policy
+* Training & Best Practices
+* ILTER DM
+* DIEMS: 
+    + https://www.drupal.org/project/deims
+    + https://github.com/lter/deims
+
+
+Messages
+-------------------------
+* Need Simple Guides to Data Management Best Practices
+* Need to Start Now
+* Need to Develop a Culture of Data Sharing
+* Need Training
+* Need Funding to hire data managers
+* It is expensive to do it right
+* Need a representative from the Americas on the ILTER data management committee
+
+Conclusions
+-------------------------
+* More training-starting at a basic level
+* Need to coordinate efforts
+* Develop infrastructure
+
+
+
+
