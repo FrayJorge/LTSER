@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="Bryan Milstead" />
+<meta name="author" content="Bryan Milstead, Inigo San Gil, and Andrea Previtali" />
 
 
 <title>LTSER Data Management Workshop Report</title>
@@ -53,102 +53,198 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="header">
 <h1 class="title">LTSER Data Management Workshop Report</h1>
-<h4 class="author"><em>Bryan Milstead</em></h4>
+<h4 class="author"><em>Bryan Milstead, Inigo San Gil, and Andrea Previtali</em></h4>
 <h4 class="date"><em>Monday, December 08, 2014</em></h4>
 </div>
 
 
-<!---
-use these command instead of the knit icon if you want the data and work loaded into the R workspace
-  library(knitr)
-      a<-getwd()
-        if(substr(a,nchar(a)-4,nchar(a))!='LTSER') print('WARNING: Wrong Working Directory')
-  knit('LTSER_DataMgmtWorkshopReport2014.rmd')
--->
 <div id="introduction" class="section level2">
 <h2>Introduction:</h2>
-<p>On Dec. 3, 2014…</p>
+<p>As part of the All Scientist of the Americas meeting (<a href="http://www.ltser-chile.cl/ilter-meeting-2014/">http://www.ltser-chile.cl/ilter-meeting-2014/</a>) a data management workshop was held on December 3rd, 2014 in Valdivia Chile. The main purpose of the workshop was to intiatiate a conversation among participants on how to better manage long-term ecological data. The workshop began with a presentation of the Drupal Ecological Information Management System (DEIMS), a content management systems designed to facilitate the stewardship and documentation of ecological datasets. This was followed by a question and answer period where participants discussed the challenges they face. We ended the workshop by collecting a set of recommendations from the participants.</p>
 </div>
 <div id="participants" class="section level2">
 <h2>Participants:</h2>
-<p><strong>Workshop Organizers:</strong></p>
+<p>The workshop was organized by:</p>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Name</th>
-<th align="left">Email</th>
+<th align="left">name</th>
+<th align="left">country</th>
+<th align="left">email</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Andrea Previtali</td>
+<td align="left">Argentina</td>
 <td align="left"><a href="mailto:andrea.previtali@gmail.com">andrea.previtali@gmail.com</a></td>
 </tr>
 <tr class="even">
 <td align="left">Bryan Milstead</td>
-<td align="left"><a href="mailto:willbmisled@gmail.com">willbmisled@gmail.com</a></td>
+<td align="left">USA</td>
+<td align="left"><a href="mailto:Milstead.bryan@epa.gov">Milstead.bryan@epa.gov</a></td>
 </tr>
 <tr class="odd">
 <td align="left">David Blankman</td>
+<td align="left">Israel</td>
 <td align="left"><a href="mailto:dblankman1@gmail.com">dblankman1@gmail.com</a></td>
 </tr>
 <tr class="even">
 <td align="left">Inigo San Gil</td>
+<td align="left">USA</td>
 <td align="left"><a href="mailto:isangil@lternet.edu">isangil@lternet.edu</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Kristin Vanderbilt</td>
+<td align="left">USA</td>
 <td align="left"><a href="mailto:vanderbi@sevilleta.unm.edu">vanderbi@sevilleta.unm.edu</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Attendees:</strong></p>
+<p>The following people attended:</p>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Name</th>
-<th align="left">Email</th>
+<th align="left">name</th>
+<th align="left">country</th>
+<th align="left">email</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left">Alejandra I. Domic</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:alejandradomic@gmail.com">alejandradomic@gmail.com</a></td>
+</tr>
+<tr class="even">
+<td align="left">Álvaro G. Gutiérrez</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:bosqueciencia@gmail.com">bosqueciencia@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Aurora Gaxiola</td>
+<td align="left">Chile</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Eva Dettweiler-Robinson</td>
+<td align="left">USA</td>
+<td align="left"><a href="mailto:evadr@unm.edu">evadr@unm.edu</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Francisco Bonet</td>
+<td align="left">España</td>
+<td align="left"><a href="mailto:fjbonet@gmail.com">fjbonet@gmail.com</a></td>
+</tr>
+<tr class="even">
+<td align="left">Gerardo Gutiérrez Orellana</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:gerajocker@hotmail.com">gerajocker@hotmail.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left">José D. Carriquiry</td>
+<td align="left">Mexico</td>
+<td align="left"><a href="mailto:carriquiry@uabc.edu.mx">carriquiry@uabc.edu.mx</a></td>
+</tr>
+<tr class="even">
+<td align="left">José Luis Cortés Bugueño</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:jluiscortesbug@gmail.com">jluiscortesbug@gmail.com</a></td>
+</tr>
+<tr class="odd">
 <td align="left">Julio Gutiérrez</td>
+<td align="left">Chile</td>
 <td align="left"><a href="mailto:jgutierr@userena.cl">jgutierr@userena.cl</a></td>
+</tr>
+<tr class="even">
+<td align="left">Luis Eduardo Calderon Aguilera</td>
+<td align="left">Mexico</td>
+<td align="left"><a href="mailto:leca@cicese.mx">leca@cicese.mx</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Margarida Santos?Reis</td>
+<td align="left">Portugal</td>
+<td align="left"><a href="mailto:mmreis@fc.ul.pt">mmreis@fc.ul.pt</a></td>
+</tr>
+<tr class="even">
+<td align="left">Maria del Pilar Fernandez Murillo</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:mfernandez@userena.cl">mfernandez@userena.cl</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Mauricio Cotera</td>
+<td align="left">Mexico</td>
+<td align="left"><a href="mailto:Mauricio_cotera@yahoo.com">Mauricio_cotera@yahoo.com</a></td>
+</tr>
+<tr class="even">
+<td align="left">Miguel Luna</td>
+<td align="left">Mexico</td>
+<td align="left"><a href="mailto:lluna.miguel@inifap.gob.mx">lluna.miguel@inifap.gob.mx</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Ondina Angelica Riquelme Bugueño</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:oriquelme@userena.cl">oriquelme@userena.cl</a></td>
+</tr>
+<tr class="even">
+<td align="left">Petr Znachor</td>
+<td align="left">Czech Republic</td>
+<td align="left"><a href="mailto:znachy@gmail.com">znachy@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Priscila Molina Pérez</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:priscila.molina@wwf.cl">priscila.molina@wwf.cl</a></td>
+</tr>
+<tr class="even">
+<td align="left">Rocio Sanhueza C.</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:rosancab@gmail.com">rosancab@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Simon Castillo</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:scb.139@gmail.com">scb.139@gmail.com</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Additional people to include on mailing lists:</strong></p>
+<p>Additional People to include on the mailing list for the workshop:</p>
 <table>
 <thead>
 <tr class="header">
-<th align="left">Name</th>
-<th align="left">Email</th>
+<th align="left">name</th>
+<th align="left">country</th>
+<th align="left">email</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Aaron Ellison</td>
+<td align="left">USA</td>
 <td align="left"><a href="mailto:aellison@fas.harvard.edu">aellison@fas.harvard.edu</a></td>
 </tr>
 <tr class="even">
 <td align="left">Juan Armesto</td>
+<td align="left">Chile</td>
 <td align="left"><a href="mailto:jarmesto@bio.puc.cl">jarmesto@bio.puc.cl</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Juan Ignacio Mauricio Isla Cortes</td>
+<td align="left"></td>
 <td align="left"><a href="mailto:jimic12@yahoo.es">jimic12@yahoo.es</a></td>
 </tr>
 <tr class="even">
 <td align="left">Ricardo Rossi</td>
-<td align="left">???</td>
+<td align="left">Chile</td>
+<td align="left"><a href="mailto:rozzi@unt.edu">rozzi@unt.edu</a></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="links" class="section level2">
 <h2>Links</h2>
+<p>Below we provide links to information on basic information management topics of interest to the participants. This is not a complete list. Please feel free to suggest additional materials and topics to include. <br> <strong>Formatting Data in Spreadsheets:</strong> Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel. Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly. The following sites provide information on how to make sure the data are formatted correctly: * <a href="http://vita.had.co.nz/papers/tidy-data.pdf">http://vita.had.co.nz/papers/tidy-data.pdf</a> <br> <strong>Training &amp; Best Practices:</strong> Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel. Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly. The following sites provide information on how to make sure the data are formatted correctly: * Tid</p>
 <ul>
-<li>Tidy Data: <a href="http://vita.had.co.nz/papers/tidy-data.pdf">http://vita.had.co.nz/papers/tidy-data.pdf</a></li>
 <li>Portals
 <ul>
 <li><a href="http://databib.org/">http://databib.org/</a></li>
@@ -164,12 +260,10 @@ use these command instead of the knit icon if you want the data and work loaded 
 <li>Data Sharing Policy</li>
 <li>Training &amp; Best Practices</li>
 <li>ILTER DM</li>
-<li><p>DIEMS: <a href="https://www.drupal.org/project/deims">https://www.drupal.org/project/deims</a> <a href="https://github.com/lter/deims">https://github.com/lter/deims</a></p></li>
-<li>Item 1</li>
-<li>Item 2
+<li>DIEMS:
 <ul>
-<li>Item 2a</li>
-<li>Item 2b</li>
+<li><a href="https://www.drupal.org/project/deims">https://www.drupal.org/project/deims</a></li>
+<li><a href="https://github.com/lter/deims">https://github.com/lter/deims</a></li>
 </ul></li>
 </ul>
 </div>
@@ -184,6 +278,22 @@ use these command instead of the knit icon if you want the data and work loaded 
 <li>It is expensive to do it right</li>
 <li>Need a representative from the Americas on the ILTER data management committee</li>
 </ul>
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
+<ul>
+<li>More training-starting at a basic level</li>
+<li>Need to coordinate efforts</li>
+<li>Develop infrastructure</li>
+</ul>
+</div>
+<div id="document-source" class="section level2">
+<h2>Document Source</h2>
+<p>This document can was written in Rmarkdown, an open source text editing language, and is stored on gitHub. The raw document and associated files can be accessed by “forking” the repository: <a href="https://github.com/FrayJorge/LTSER">https://github.com/FrayJorge/LTSER</a>. A pdf version can be downloaded directly</p>
+</div>
+<div id="acknowledgments" class="section level2">
+<h2>Acknowledgments</h2>
+<p>Thanks to: Dr. Juan Armesto, Dr. Ricardo Rossi, Dr. Julio Gutiérrez, and Monterrat Lara for organizing the meeting and inviting us to participate.</p>
 </div>
 
 

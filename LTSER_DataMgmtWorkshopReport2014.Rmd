@@ -1,7 +1,7 @@
 ---
 title: "LTSER Data Management Workshop Report"
-author: "Bryan Milstead, Inigo San Gil, and Andrea Previtali"
-date: "Monday, December 08, 2014"
+author: "Andrea Previtali, Bryan Milstead, David Blankman,Inigo San Gil, and Kristin Vanderbilt"
+date: "December 11, 2014"
 output: pdf_document
 ---
 ```{r setup , eval=TRUE, include=FALSE, echo=FALSE, cache=FALSE}
@@ -14,6 +14,62 @@ Introduction:
 -------------------------
 As part of the All Scientist of the Americas meeting (http://www.ltser-chile.cl/ilter-meeting-2014/) a data management workshop was held on December 3rd, 2014 in Valdivia Chile.  The main purpose of the workshop was to intiatiate a conversation among participants on how to better manage long-term ecological data.  The workshop began with a presentation of the Drupal Ecological Information Management System (DEIMS), a content management systems designed to facilitate the stewardship and documentation of ecological datasets.  This was followed by a question and answer period where participants discussed the challenges they face.  We ended the workshop by collecting a set of recommendations from the participants.
 
+Recommendations:
+-------------------------
+At the end of the workshop participants were asked for suggestions on how to improve information management in the LTSER sites in the Americas. The recommendations are:
+
+* **Start Now**: it is clear that we need to initiate and/or improve information practices and it is imperative that we start without delay.
+* **Develop Simple Guides to Data Management Best Practices**: many of the participants are just starting with data management and it would be helpful to have some simple guidelines for best practices.
+* **Training**:  in addition to developing guidelines there is a need for hands on training from basic data entry and management principles to more advanced information management and analysis procedures.
+* **Data Sharing**: a clear concern expressed by many participants was the need to convince investigators of the need to share data. Data sharing policies can be developed to define who can access the data, when the data will be made available, and how to properly credit the researchers for their work. The ILTER data policy can be found here: http://www.ilternet.edu/data-info-management/ILTER%20Network%20Data%20Access%20Policy-8.23.2008-1.pdf
+* **Funding to Support Data Managers**: information management is an expensive and time consuming task.  There was general agreement that additional funding is necessary to support data managers and infrastructure.
+* **Representative from the Americas on the ILTER Data Management Committee**: the Americas are not currently represented on the ILTER data managment committee.  It would be valuable to select a representative.
+
+Links
+-------------------------
+Below we provide links to information on information management topics of interest to the participants. This is not a complete list.  Please feel free to suggest additional materials and topics to include.
+
+* **Formatting Data in Spreadsheets:**  Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel.  Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly.  The following paper provides information on how to make sure the data are formatted correctly:
+    + http://vita.had.co.nz/papers/tidy-data.pdf
+
+* **Training & Best Practices:**  There are many internet sites devoted to this. As a start look at these websites:
+    + The ILTER Data and Information Management Training Resources: http://www.ilternet.edu/data-info-management/data-im-training-resources
+    + DataOne's training resources: https://www.dataone.org/education
+    + DataOne's best practices suggestions: https://www.dataone.org/best-practices
+
+* **Data Portals:** Where and how to archive and share data is an important decision.  There are hundreds of data portals now available. Below is a mixed list of data portals and sites that catalog data portals.
+    + https://www.dataone.org
+    + http://databib.org/
+    + http://www.re3data.org/
+    + https://www.datacite.org/
+    + http://oad.simmons.edu/oadwiki/Data_repositories
+    + http://www.nature.com/sdata/data-policies/repositories
+    + http://figshare.com/
+
+* **R** is an open source statistical computing language that can be used for data management, analysis, and GIS: 
+    + http://cran.r-project.org/
+
+* **Rstudio** provides an interface to R and adds new capabilites such as an interface to gitHub.  They also provide tutorials: 
+    + http://www.rstudio.com/
+
+* **gitHub** is a code repository and version control system.  Many data managers use gitHub to share information, code, and documents.  gitHub allows multiple researchers to work on the same files and to share equally across computers: 
+    + https://github.com/
+
+* **DIEMS** (Drupal Ecological Information Management System) was presented in the workshop.  This is a content management system that facilitates the communication among researchers, data sharing, and metadata creation.  The following links will help you get started: 
+    + https://www.drupal.org/project/deims
+    + https://github.com/lter/deims
+
+Document Source
+-------------------------
+This document can was written in Rmarkdown, an open source text editing language, and is stored on gitHub.
+
+The PDF version of this file can be downloaded here: https://github.com/FrayJorge/LTSER/blob/master/LTSER_DataMgmtWorkshopReport2014.pdf?raw=true
+
+If you are a gitHub user you can download the Rmarkdown document and associated files by "forking" the repository: https://github.com/FrayJorge/LTSER. 
+
+Acknowledgments
+-------------------------
+Thanks to: Dr. Juan Armesto, Dr. Ricardo Rossi, Dr. Julio Gutiérrez, and Monterrat Lara for organizing the meeting and inviting us to participate.
 
 Participants:
 -------------------------
@@ -43,54 +99,6 @@ Additional People to include on the mailing list for the workshop:
   #make a pretty table
     kable(a,row.names=FALSE)
 ```
-
-
-Links
--------------------------
-Below we provide links to information on basic information management topics of interest to the participants. This is not a complete list.  Please feel free to suggest additional materials and topics to include.
-<br>
-**Formatting Data in Spreadsheets:**  Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel.  Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly.  The following sites provide information on how to make sure the data are formatted correctly:
-* http://vita.had.co.nz/papers/tidy-data.pdf
-<br>
-**Training & Best Practices:**  Much of the data entry done by the ILTSER sites is being done with spreadsheets such as Excel.  Spreadsheets can be useful but also can lead to large problems if the data are not formatted correctly.  The following sites provide information on how to make sure the data are formatted correctly:
-* Tid
-
-
-
-* Portals
-    + http://databib.org/
-    + http://www.re3data.org/
-    + https://www.datacite.org/
-    + http://oad.simmons.edu/oadwiki/Data_repositories
-    + http://www.nature.com/sdata/data-policies/repositories
-    + http://blogs.plos.org/tech/how-to-find-an-appropriate-research-data-repository/
-    + http://figshare.com/
-* gitHub
-* DataOne: https://www.dataone.org/
-* Data Sharing Policy
-* Training & Best Practices
-* ILTER DM
-* DIEMS: 
-    + https://www.drupal.org/project/deims
-    + https://github.com/lter/deims
-
-
-Messages
--------------------------
-* Need Simple Guides to Data Management Best Practices
-* Need to Start Now
-* Need to Develop a Culture of Data Sharing
-* Need Training
-* Need Funding to hire data managers
-* It is expensive to do it right
-* Need a representative from the Americas on the ILTER data management committee
-
-Conclusions
--------------------------
-* More training-starting at a basic level
-* Need to coordinate efforts
-* Develop infrastructure
-
 
 
 
