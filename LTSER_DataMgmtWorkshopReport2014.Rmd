@@ -36,6 +36,9 @@ Below we provide links to information on information management topics of intere
     + The ILTER Data and Information Management Training Resources: http://www.ilternet.edu/data-info-management/data-im-training-resources
     + DataOne's training resources: https://www.dataone.org/education
     + DataOne's best practices suggestions: https://www.dataone.org/best-practices
+    + Hook et al. 2010.   Best practices for preparing environmental data sets to share and archive: http://daac.ornl.gov/PI/BestPractices-2010.pdf
+    + Borer et al. 2009. Some Simple Guidelines for Effective Data Management. Bulletin of the Ecological Society of America 90:205–214: http://dx.doi.org/10.1890/0012-9623-90.2.205
+
 
 * **Data Portals:** Where and how to archive and share data is an important decision.  There are hundreds of data portals now available. Below is a mixed list of data portals and sites that catalog data portals.
     + https://www.dataone.org
@@ -61,7 +64,7 @@ Below we provide links to information on information management topics of intere
 
 Document Source
 -------------------------
-This document can was written in Rmarkdown, an open source text editing language, and is stored on gitHub.
+This document was written in Rmarkdown, an open source text editing language, and is stored on gitHub.
 
 The PDF version of this file can be downloaded here: https://github.com/FrayJorge/LTSER/blob/master/LTSER_DataMgmtWorkshopReport2014.pdf?raw=true
 
