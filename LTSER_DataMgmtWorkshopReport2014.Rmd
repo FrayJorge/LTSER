@@ -41,6 +41,7 @@ Below we provide links to information on information management topics of intere
 
 
 * **Data Portals:** Where and how to archive and share data is an important decision.  There are hundreds of data portals now available. Below is a mixed list of data portals and sites that catalog data portals.
+    + https://portal.lternet.edu
     + https://www.dataone.org
     + http://databib.org/
     + http://www.re3data.org/
@@ -58,9 +59,12 @@ Below we provide links to information on information management topics of intere
 * **gitHub** is a code repository and version control system.  Many data managers use gitHub to share information, code, and documents.  gitHub allows multiple researchers to work on the same files and to share equally across computers: 
     + https://github.com/
 
-* **DIEMS** (Drupal Ecological Information Management System) was presented in the workshop.  This is a content management system that facilitates the communication among researchers, data sharing, and metadata creation.  The following links will help you get started: 
-    + https://www.drupal.org/project/deims
-    + https://github.com/lter/deims
+* **DEIMS** (Drupal Ecological Information Management System) was presented in the workshop.  This is a content management system that facilitates the communication among researchers, data sharing, and metadata creation.  DEIMS provides groups (labs, LTSER sites, ILTER groups) with a professional and modern Information Management system. A relatively large of information technologists representing many sites banded together to address this common need.  The iodea behind working together is economy of scales. We all have a common problem, and few resources.  By combining resources and strenghts, we can have a solution that is good for everybody, but out of reach to do by one single group.  DEIMS design was not exclusive, it is all free, open source, based on a leading, free, popular and open source Content Management System (Drupal - http://drupal.org ). The following links will help you get started: 
+    + Poster presented at ILTER meeting https://deims.lternet.edu/deims-lter-poster.pdf
+    + Project page at Drupal https://www.drupal.org/project/deims
+    + Project at GitHub https://github.com/lter/deims
+    + DEIMS related blog posts http://lno.lternet.edu/search/node/DEIMS
+    + DEIMS presentation at Austin DrupalCon https://austin2014.drupal.org/session/deims-drupal-profile-ecological-data
 
 Document Source
 -------------------------
